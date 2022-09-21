@@ -21,9 +21,9 @@ Route::get('/', function () {
 
 use App\Http\Controllers\CombustivelController;
 
-Route::get('/',CombustivelController::class,'index');
+Route::get('/',[CombustivelController::class,'index']);
 
-Route::get('/gasto',CombustivelController::class,'gasto');
+Route::get('/gasto',[CombustivelController::class,'gasto']);
 
 
 
